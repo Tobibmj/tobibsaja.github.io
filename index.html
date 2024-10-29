@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tobib Muqorobin Jinan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img src="profile.jpg" alt="Foto Profil" class="profile-photo">
+        </div>
+        <h1 class="fade-in">Tobib Muqorobin Jinan</h1>
+        <p class="fade-in">19 years old, from Tasikmalaya</p>
+        <a href="education.html" class="button">Pendidikan Saya</a> <!-- Link ke halaman pendidikan -->
+    </header>
+
+
+    <section id="about">
+        <h2 class="fade-in">About Me</h2>
+        <p class="fade-in">I'm a Fullstack Developer with a passion for UI/UX design. I love creating user-friendly applications and improving user experiences.</p>
+    </section>
+    <!-- Bagian Skills -->
+
+    <section id="skills">
+        <h2 class="fade-in">My Skills</h2>
+        <div class="skill">
+            <div class="skill-name">HTML</div>
+            <div class="skill-bar">
+                <div class="skill-level html" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">CSS</div>
+            <div class="skill-bar">
+                <div class="skill-level css" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Java</div>
+            <div class="skill-bar">
+                <div class="skill-level java" style="width: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Python</div>
+            <div class="skill-bar">
+                <div class="skill-level python" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">C++</div>
+            <div class="skill-bar">
+                <div class="skill-level cpp" style="width: 50%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Linux</div>
+            <div class="skill-bar">
+                <div class="skill-level linux" style="width: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">Canva</div>
+            <div class="skill-bar">
+                <div class="skill-level canva" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill-name">CapCut</div>
+            <div class="skill-bar">
+                <div class="skill-level capcut" style="width: 80%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="social">
+        <h2 class="fade-in">Connect with Me</h2>
+        <div class="social-links">
+            <a href="https://instagram.com/tobib_mj" target="_blank">
+                <img src="icons/instagram-icon.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://facebook.com/Tobib Muqorobin Jinan" target="_blank">
+                <img src="icons/facebook-icon.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://wa.me/6285603635462" target="_blank">
+                <img src="icons/whatsapp-icon.png" alt="WhatsApp" class="social-icon">
+            </a>
+            <a href="https://linkedin.com/in/tobib-muqorobin-jinan" target="_blank">
+                <img src="icons/linkedin-icon.png" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://www.tiktok.com/@tobibmuqorobinjinan" target="_blank">
+                <img src="icons/tiktok-icon.png" alt="TikTok" class="social-icon">
+            </a>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="fade-in">My Projects</h2>
+        <ul>
+            <li><a href="#" target="_blank">Website Portfolio Pribadi</a> - Membangun website pribadi untuk menampilkan karya dan keahlian di bidang pengembangan web. Didesain dengan fokus pada pengalaman pengguna dan responsif di berbagai perangkat.</li>
+            <li><a href="#" target="_blank">Aplikasi To-Do List</a> - Aplikasi to-do list yang memungkinkan pengguna menambahkan, mengedit, dan menghapus tugas. Pengguna dapat menyimpan tugas di local storage untuk akses di kemudian hari.</li>
+            <li><a href="#" target="_blank">Blog Pribadi</a> - Platform blogging sederhana di mana pengguna dapat menulis dan mempublikasikan artikel. Menyediakan fitur untuk menambah, mengedit, dan menghapus post.</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tobib Muqorobin Jinan</p>
+    </footer>
+
+    <script>
+        // Script to trigger animation on load
+        window.onload = function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach((element, index) => {
+                element.style.animationDelay = `${index * 0.5}s`;
+                element.classList.add('fade-in-active');
+            });
+        };
+    </script>
+</body>
+</html>
